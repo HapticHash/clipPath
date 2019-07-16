@@ -11,10 +11,16 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
 .inner {
-  background: #008cff;
+  background: #f700ff;
   padding: 1em;
-  width: 20vw;
+  margin: 0 auto;
+  width: 17em;
   border-radius: 10px;
   -webkit-clip-path: circle(10% at 90% 20%);
           clip-path: circle(10% at 90% 20%);
@@ -36,11 +42,16 @@ body {
   -webkit-transition: color .5s;
   transition: color .5s;
   position: relative;
-  margin-right: 5%;
-  margin-top: 5%;
+  margin-right: 0.5em;
+  margin-top: 0.8em;
 }
 
-.inner:hover span {
+.inner span .fas {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.inner:hover span .fas {
   color: rgba(255, 255, 255, 0);
 }
 
@@ -51,5 +62,7 @@ body {
 .inner p {
   color: #fff;
   font-size: 1rem;
+  text-align: justify;
+  text-justify: inter-word;
 }
 /*# sourceMappingURL=main.css.map */
