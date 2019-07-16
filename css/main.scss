@@ -1,0 +1,31 @@
+body {
+    background-color: #dcf5ff;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+
+    .inner {
+        background: #00b6ff;
+        padding: 1em;
+        width: 100%;
+        border-radius: 10px;
+    
+        h1 {
+            color: #fff;
+        }
+
+        p {
+            color: #fff;
+            font-size: 1rem;
+        }
+    }
+}

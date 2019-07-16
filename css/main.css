@@ -1,1 +1,35 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+body {
+  background-color: #dcf5ff;
+  margin: 0;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.container {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.container .inner {
+  background: #00b6ff;
+  padding: 1em;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container .inner h1 {
+  color: #fff;
+}
+
+.container .inner p {
+  color: #fff;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=main.css.map */
