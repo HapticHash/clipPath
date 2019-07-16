@@ -11,24 +11,44 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
-.container {
-  width: 30%;
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-.container .inner {
-  background: #00b6ff;
+.inner {
+  background: #008cff;
   padding: 1em;
-  width: 100%;
+  width: 20vw;
   border-radius: 10px;
+  -webkit-clip-path: circle(10% at 90% 20%);
+          clip-path: circle(10% at 90% 20%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
 }
 
-.container .inner h1 {
+.inner:hover {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background: #00b6ff;
+}
+
+.inner span {
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+  position: relative;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+.inner:hover span {
+  color: rgba(255, 255, 255, 0);
+}
+
+.inner h1 {
   color: #fff;
 }
 
-.container .inner p {
+.inner p {
   color: #fff;
   font-size: 1rem;
 }

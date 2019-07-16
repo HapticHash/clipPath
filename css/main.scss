@@ -8,17 +8,35 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-.container {
-    width: 30%;
-    background-color: #fff;
-    border-radius: 10px;
 
     .inner {
-        background: #00b6ff;
+        background: #008cff;
         padding: 1em;
-        width: 100%;
+        width: 20vw;
         border-radius: 10px;
+        clip-path: circle(10% at 90% 20%);
+        transition: all .5s ease-in-out;
+        cursor: pointer;
     
+        &:hover {
+            clip-path: circle(75%);
+            background: #00b6ff;
+        }
+
+        span {
+            color: #fff;
+            font-weight: bold;
+            float: right;
+            transition: color .5s;
+            position: relative;
+            margin-right: 5%;
+            margin-top: 5%;
+        }
+
+        &:hover span {
+            color: rgba($color: #fff, $alpha: 0);
+        }
+
         h1 {
             color: #fff;
         }
@@ -28,4 +46,3 @@ body {
             font-size: 1rem;
         }
     }
-}
